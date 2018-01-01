@@ -9,6 +9,8 @@
     <string id="AMPMColorTitle">AM/PM Color</string>
     <string id="DayArcColorTitle">Day Arc Color</string>
     <string id="NightArcColorTitle">Night Arc Color</string>
+    <string id="SunriseMarkColorTitle">Sunrise Mark Color</string>
+    <string id="SunsetMarkColorTitle">Sunset Mark Color</string>
     <string id="TimePosMarkColorTitle">Time Position Mark Color</string>
     <string id="MilitaryFormatTitle">Military Format for Hour Time</string>
 

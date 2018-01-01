@@ -9,6 +9,8 @@
     <string id="AMPMColorTitle">AM/PM颜色</string>
     <string id="DayArcColorTitle">日间弧线颜色</string>
     <string id="NightArcColorTitle">夜间弧线颜色</string>
+    <string id="SunriseMarkColorTitle">日出标记颜色</string>
+    <string id="SunsetMarkColorTitle">日落标记颜色</string>
     <string id="TimePosMarkColorTitle">时间位置标记颜色</string>
     <string id="MilitaryFormatTitle">小时前补零</string>
 

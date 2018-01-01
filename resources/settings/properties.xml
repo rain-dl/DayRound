@@ -7,6 +7,8 @@
     <property id="AMPMColor" type="number">0</property>
     <property id="DayArcColor" type="number">0</property>
     <property id="NightArcColor" type="number">0</property>
+    <property id="SunriseMarkColor" type="number">0</property>
+    <property id="SunsetMarkColor" type="number">0</property>
     <property id="TimePosMarkColor" type="number">0</property>
     <property id="UseMilitaryFormat" type="boolean">false</property>
     <property id="UpperInfo" type="number">0</property>

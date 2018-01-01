@@ -18,8 +18,7 @@ class DayRoundView extends Ui.WatchFace {
     hidden var secondFontWidth;
     hidden var secondFontHeight;
     hidden var ampmFont;
-    hidden var moonIcon;
-    hidden var sunIcon;
+    hidden var sunmoonFont;
     hidden var centerX;
     hidden var centerY;
     private var _timeZoneOffset = 0;
@@ -33,6 +32,8 @@ class DayRoundView extends Ui.WatchFace {
     private var _secondColor;
     private var _dayArcColor;
     private var _nightArcColor;
+    private var _sunriseMarkColor;
+    private var _sunsetMarkColor;
     private var _timePosMarkColor;
     private var _upperInfo;
     private var _upperInfoPosition;
@@ -83,11 +84,10 @@ class DayRoundView extends Ui.WatchFace {
         ampmFont = WatchUi.loadResource(Rez.Fonts.id_font_berlin_sans_fb_7);
         _iconFont = WatchUi.loadResource(Rez.Fonts.id_font_icons);
 
-        moonIcon = Ui.loadResource(Rez.Drawables.Moon);
-        sunIcon = Ui.loadResource(Rez.Drawables.Sun);
+        sunmoonFont = WatchUi.loadResource(Rez.Fonts.id_font_sun_moon);
 
-        centerX = dc.getWidth() >> 1;
-        centerY = dc.getHeight() >> 1;
+        centerX = dc.getWidth() >> 1 - 1;
+        centerY = dc.getHeight() >> 1 - 1;
 
         loadSettings();
     }
@@ -118,6 +118,8 @@ class DayRoundView extends Ui.WatchFace {
         _secondColor = Utils.getColor(App.getApp().getProperty("SecondColor"), Gfx.COLOR_YELLOW);
         _dayArcColor = Utils.getColor(App.getApp().getProperty("DayArcColor"), Gfx.COLOR_BLUE);
         _nightArcColor = Utils.getColor(App.getApp().getProperty("NightArcColor"), Gfx.COLOR_DK_GRAY);
+        _sunriseMarkColor = Utils.getColor(App.getApp().getProperty("SunriseMarkColor"), Gfx.COLOR_WHITE);
+        _sunsetMarkColor = Utils.getColor(App.getApp().getProperty("SunsetMarkColor"), Gfx.COLOR_WHITE);
         _timePosMarkColor = Utils.getColor(App.getApp().getProperty("TimePosMarkColor"), Gfx.COLOR_YELLOW);
         _upperInfo = App.getApp().getProperty("UpperInfo");
         _upperInfoPosition = App.getApp().getProperty("UpperInfoPosition");
@@ -283,10 +285,12 @@ class DayRoundView extends Ui.WatchFace {
             dc.drawArc(centerX, centerY, r, Gfx.ARC_CLOCKWISE, sunset_ad, sunrise_ad);
 
             r = r - 1;
-            dc.drawBitmap(centerX + 0.5 + r * Math.sin(sunrise_ar) - sunIcon.getWidth() >> 1,
-                centerY + 0.5 - r * Math.cos(sunrise_ar) - sunIcon.getHeight() >> 1, sunIcon);
-            dc.drawBitmap(centerX + 2 + r * Math.sin(sunset_ar) - moonIcon.getWidth() >> 1,
-                centerY + 2 - r * Math.cos(sunset_ar) - moonIcon.getHeight() >> 1, moonIcon);
+            dc.setColor(_sunriseMarkColor, Gfx.COLOR_TRANSPARENT);
+            dc.drawText(centerX + 0.5 + r * Math.sin(sunrise_ar), centerY + 0.5 - r * Math.cos(sunrise_ar),
+                sunmoonFont, "R", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
+            dc.setColor(_sunsetMarkColor, Gfx.COLOR_TRANSPARENT);
+            dc.drawText(centerX + 0.5 + r * Math.sin(sunset_ar), centerY + 0.5 - r * Math.cos(sunset_ar),
+                sunmoonFont, "S", Gfx.TEXT_JUSTIFY_CENTER | Gfx.TEXT_JUSTIFY_VCENTER);
 
             drawTimePositionIcon(dc);
         }
