@@ -5,6 +5,7 @@
     <property id="MinuteColor" type="number">0</property>
     <property id="SecondColor" type="number">0</property>
     <property id="AMPMColor" type="number">0</property>
+    <property id="ShowDayCircle" type="boolean">true</property>
     <property id="DayArcColor" type="number">0</property>
     <property id="NightArcColor" type="number">0</property>
     <property id="SunriseMarkColor" type="number">0</property>

@@ -7,6 +7,8 @@
     <string id="MinuteColorTitle">Minute Color</string>
     <string id="SecondColorTitle">Second Color</string>
     <string id="AMPMColorTitle">AM/PM Color</string>
+
+	<string id="ShowDayCircleTitle">Show Day Circle</string>
     <string id="DayArcColorTitle">Day Arc Color</string>
     <string id="NightArcColorTitle">Night Arc Color</string>
     <string id="SunriseMarkColorTitle">Sunrise Mark Color</string>

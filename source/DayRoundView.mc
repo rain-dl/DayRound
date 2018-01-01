@@ -29,6 +29,7 @@ class DayRoundView extends Ui.WatchFace {
     private var _hourColor;
     private var _minuteColor;
     private var _ampmColor;
+    private var _showDayCircle;
     private var _secondColor;
     private var _dayArcColor;
     private var _nightArcColor;
@@ -115,6 +116,7 @@ class DayRoundView extends Ui.WatchFace {
         _hourColor = Utils.getColor(App.getApp().getProperty("HourColor"), Gfx.COLOR_WHITE);
         _minuteColor = Utils.getColor(App.getApp().getProperty("MinuteColor"), Gfx.COLOR_BLUE);
         _ampmColor = Utils.getColor(App.getApp().getProperty("AMPMColor"), Gfx.COLOR_WHITE);
+        _showDayCircle = App.getApp().getProperty("ShowDayCircle");
         _secondColor = Utils.getColor(App.getApp().getProperty("SecondColor"), Gfx.COLOR_YELLOW);
         _dayArcColor = Utils.getColor(App.getApp().getProperty("DayArcColor"), Gfx.COLOR_BLUE);
         _nightArcColor = Utils.getColor(App.getApp().getProperty("NightArcColor"), Gfx.COLOR_DK_GRAY);
@@ -256,7 +258,7 @@ class DayRoundView extends Ui.WatchFace {
         dc.drawText(min_sec_x, sec_y, secondFont, second, Gfx.TEXT_JUSTIFY_LEFT);
     }
 
-    function drawSunIcons(dc) {
+    function drawDayCircle(dc) {
         var actInfo = Act.getActivityInfo();
         if(actInfo != null && actInfo.currentLocation != null) {
             var day = Time.today().value() + _timeZoneOffset;
@@ -504,7 +506,9 @@ class DayRoundView extends Ui.WatchFace {
         }
 
         if (!isPartialUpdate) {
-            drawSunIcons(dc);
+            if (_showDayCircle) {
+                drawDayCircle(dc);
+            }
 
             if (_arc1Info >= 0) {
                 drawArcInfo(dc, _arc1Info, _arc1Radius, _arc1Width, _arc1Color, _arc1Direction);

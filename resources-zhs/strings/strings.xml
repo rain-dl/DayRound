@@ -7,6 +7,7 @@
     <string id="MinuteColorTitle">分钟颜色</string>
     <string id="SecondColorTitle">秒颜色</string>
     <string id="AMPMColorTitle">AM/PM颜色</string>
+	<string id="ShowDayCircleTitle">显示日出、日落圆环</string>
     <string id="DayArcColorTitle">日间弧线颜色</string>
     <string id="NightArcColorTitle">夜间弧线颜色</string>
     <string id="SunriseMarkColorTitle">日出标记颜色</string>
