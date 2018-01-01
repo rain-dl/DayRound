@@ -1,0 +1,12 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="Moon" filename="moon.png" />
+    <bitmap id="Sun" filename="sun.png" />
+    <!-- <bitmap id="Heart" filename="heart.png" /> -->
+    <!-- <bitmap id="Calories" filename="calories.png" /> -->
+    <!-- <bitmap id="Steps" filename="steps.png" /> -->
+    <!-- <bitmap id="ActiveMinutes" filename="active.png" /> -->
+    <!-- <bitmap id="Altitude" filename="altitude.png" /> -->
+    <!-- <bitmap id="Distance" filename="distance.png" /> -->
+    <!-- <bitmap id="Floors" filename="floors.png" /> -->
+</drawables>

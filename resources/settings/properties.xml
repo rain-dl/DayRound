@@ -1,0 +1,36 @@
+<properties>
+
+    <property id="BackgroundColor" type="number">0</property>
+    <property id="HourColor" type="number">0</property>
+    <property id="MinuteColor" type="number">0</property>
+    <property id="SecondColor" type="number">0</property>
+    <property id="AMPMColor" type="number">0</property>
+    <property id="DayArcColor" type="number">0</property>
+    <property id="NightArcColor" type="number">0</property>
+    <property id="TimePosMarkColor" type="number">0</property>
+    <property id="UseMilitaryFormat" type="boolean">false</property>
+    <property id="UpperInfo" type="number">0</property>
+    <property id="UpperInfoPosition" type="number">-60</property>
+    <property id="ShowUpperIcon" type="boolean">true</property>
+    <property id="UpperIconColor" type="number">0</property>
+    <property id="UpperIconInfoGap" type="number">4</property>
+    <property id="UpperInfoColor" type="number">0</property>
+    <property id="LowerInfo" type="number">2</property>
+    <property id="LowerInfoPosition" type="number">60</property>
+    <property id="ShowLowerIcon" type="boolean">true</property>
+    <property id="LowerIconColor" type="number">0</property>
+    <property id="LowerIconInfoGap" type="number">4</property>
+    <property id="LowerInfoColor" type="number">0</property>
+    <property id="DateFormat" type="number">0</property>
+    <property id="Arc1Info" type="number">0</property>
+    <property id="Arc1Radius" type="number">105</property>
+    <property id="Arc1Width" type="number">8</property>
+    <property id="Arc1Color" type="number">0</property>
+    <property id="Arc1Direction" type="number">0</property>
+    <property id="Arc2Info" type="number">5</property>
+    <property id="Arc2Radius" type="number">96</property>
+    <property id="Arc2Width" type="number">2</property>
+    <property id="Arc2Color" type="number">0</property>
+    <property id="Arc2Direction" type="number">1</property>
+
+</properties>

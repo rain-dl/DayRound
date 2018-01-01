@@ -1,0 +1,83 @@
+<strings>
+
+    <string id="AppName">Day Round</string>
+
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="HourColorTitle">Hour Color</string>
+    <string id="MinuteColorTitle">Minute Color</string>
+    <string id="SecondColorTitle">Second Color</string>
+    <string id="AMPMColorTitle">AM/PM Color</string>
+    <string id="DayArcColorTitle">Day Arc Color</string>
+    <string id="NightArcColorTitle">Night Arc Color</string>
+    <string id="TimePosMarkColorTitle">Time Position Mark Color</string>
+    <string id="MilitaryFormatTitle">Military Format for Hour Time</string>
+
+    <string id="UpperInfoTitle">Upper Info</string>
+    <string id="UpperInfoPositionTitle">Upper Info Position</string>
+    <string id="ShowUpperIconTitle">Show Upper Icon</string>
+    <string id="UpperIconColorTitle">Upper Icon Color</string>
+    <string id="UpperInfoColorTitle">Upper Info Color</string>
+    <string id="UpperIconInfoGapTitle">Gap Between Upper Icon and Info</string>
+
+    <string id="LowerInfoTitle">Lower Info</string>
+    <string id="LowerInfoPositionTitle">Lower Info Position</string>
+    <string id="ShowLowerIconTitle">Show Lower Icon</string>
+    <string id="LowerIconColorTitle">Lower Icon Color</string>
+    <string id="LowerInfoColorTitle">Lower Info Color</string>
+    <string id="LowerIconInfoGapTitle">Gap Between Lower Icon and Info</string>
+
+    <string id="UpperInfoPositionInputError">Please input a value between -120 and 0.</string>
+    <string id="LowerInfoPositionInputError">Please input a value between 0 and 120.</string>
+    <string id="IconInfoGapInputError">Please input a value between 0 and 20.</string>
+
+    <string id="Arc1InfoTitle">Arc 1 Info</string>
+    <string id="Arc1RadiusTitle">Arc 1 Radius</string>
+    <string id="Arc1WidthTitle">Arc 1 Width</string>
+    <string id="Arc1ColorTitle">Arc 1 Color</string>
+    <string id="Arc1DirectionTitle">Arc 1 Direction</string>
+    <string id="Arc2InfoTitle">Arc 2 Info</string>
+    <string id="Arc2RadiusTitle">Arc 2 Radius</string>
+    <string id="Arc2WidthTitle">Arc 2 Width</string>
+    <string id="Arc2ColorTitle">Arc 2 Color</string>
+    <string id="Arc2DirectionTitle">Arc 2 Direction</string>
+
+    <string id="ArcWidthInputError">Please input a value between 1 and 20.</string>
+    <string id="ArcRadiusInputError">Please input a value between 1 and 120.</string>
+
+    <string id="none">None</string>
+    <string id="date">Date</string>
+    <string id="battery">Battery</string>
+    <string id="calories">Calories</string>
+    <string id="steps">Steps</string>
+    <string id="distance">Distance</string>
+    <string id="heart_rate">Heart Rate</string>
+    <string id="active_minutes">Active Minutes</string>
+    <string id="active_minutes_week">Active Minutes Current Week</string>
+    <string id="altimeter">Altimeter</string>
+    <string id="floors">Floors</string>
+
+    <string id="clockwise">Clockwise</string>
+    <string id="counter_clockwise">Counter Clockwise</string>
+
+    <string id="DateFormatTitle">Date Format</string>
+    <string id="DateFormatMonth">Month</string>
+    <string id="DateFormatDayOfWeek">Day of week</string>
+
+    <string id="color_default">Default</string>
+    <string id="color_blue">Blue</string>
+    <string id="color_blue_dark">Blue dark</string>
+    <string id="color_green">Green</string>
+    <string id="color_green_dark">Green dark</string>
+    <string id="color_gray_little">Gray little</string>
+    <string id="color_gray_dark">Gray dark</string>
+    <string id="color_orange">Orange</string>
+    <string id="color_pink">Pink</string>
+    <string id="color_purple">Purple</string>
+    <string id="color_red">Red</string>
+    <string id="color_red_dark">Red dark</string>
+    <string id="color_white">White</string>
+    <string id="color_black">Black</string>
+    <string id="color_yellow">Yellow</string>
+    <string id="color_random">Random</string>
+
+</strings>

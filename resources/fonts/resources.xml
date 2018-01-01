@@ -1,0 +1,8 @@
+<resources>
+    <fonts>
+        <font id="id_font_futura_49" filename="futura_lt_bt_49.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_futura_18" filename="futura_lt_bt_18.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_berlin_sans_fb_7" filename="berlin_sans_fb_7.fnt" filter="APM" />
+        <font id="id_font_icons" filename="icons.fnt" filter="12345678" />
+    </fonts>
+</resources>

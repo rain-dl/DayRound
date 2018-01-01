@@ -1,0 +1,402 @@
+<settings>
+
+    <setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.HourColor" title="@Strings.HourColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.MinuteColor" title="@Strings.MinuteColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.SecondColor" title="@Strings.SecondColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.AMPMColor" title="@Strings.AMPMColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DayArcColor" title="@Strings.DayArcColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.NightArcColor" title="@Strings.NightArcColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TimePosMarkColor" title="@Strings.TimePosMarkColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.UseMilitaryFormat" title="@Strings.MilitaryFormatTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.UpperInfo" title="@Strings.UpperInfoTitle">
+        <settingConfig type="list">
+        	<listEntry value="-1">@Strings.none</listEntry>
+        	<listEntry value="0">@Strings.date</listEntry>
+        	<listEntry value="1">@Strings.calories</listEntry>
+        	<listEntry value="2">@Strings.steps</listEntry>
+        	<listEntry value="3">@Strings.distance</listEntry>
+        	<listEntry value="4">@Strings.heart_rate</listEntry>
+        	<listEntry value="5">@Strings.altimeter</listEntry>
+        	<listEntry value="6">@Strings.floors</listEntry>
+        	<listEntry value="7">@Strings.active_minutes</listEntry>
+        	<listEntry value="8">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.UpperInfoPosition" title="@Strings.UpperInfoPositionTitle">
+    	<settingConfig type="numeric" min="-120" max="0" errorMessage="@Strings.UpperInfoPositionInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.ShowUpperIcon" title="@Strings.ShowUpperIconTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.UpperIconColor" title="@Strings.UpperIconColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.UpperIconInfoGap" title="@Strings.UpperIconInfoGapTitle">
+    	<settingConfig type="numeric" min="0" max="20" errorMessage="@Strings.IconInfoGapInputError" />
+   	</setting>
+   	
+    <setting propertyKey="@Properties.UpperInfoColor" title="@Strings.UpperInfoColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.LowerInfo" title="@Strings.LowerInfoTitle">
+        <settingConfig type="list">
+        	<listEntry value="-1">@Strings.none</listEntry>
+        	<listEntry value="0">@Strings.date</listEntry>
+        	<listEntry value="1">@Strings.calories</listEntry>
+        	<listEntry value="2">@Strings.steps</listEntry>
+        	<listEntry value="3">@Strings.distance</listEntry>
+        	<listEntry value="4">@Strings.heart_rate</listEntry>
+        	<listEntry value="5">@Strings.altimeter</listEntry>
+        	<listEntry value="6">@Strings.floors</listEntry>
+        	<listEntry value="7">@Strings.active_minutes</listEntry>
+        	<listEntry value="8">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.LowerInfoPosition" title="@Strings.LowerInfoPositionTitle">
+    	<settingConfig type="numeric" min="0" max="120" errorMessage="@Strings.LowerInfoPositionInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.ShowLowerIcon" title="@Strings.ShowLowerIconTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.LowerIconColor" title="@Strings.LowerIconColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.LowerIconInfoGap" title="@Strings.LowerIconInfoGapTitle">
+    	<settingConfig type="numeric" min="0" max="20" errorMessage="@Strings.IconInfoGapInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.LowerInfoColor" title="@Strings.LowerInfoColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DateFormat" title="@Strings.DateFormatTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.DateFormatDayOfWeek</listEntry>
+            <listEntry value="1">@Strings.DateFormatMonth</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Arc1Info" title="@Strings.Arc1InfoTitle">
+        <settingConfig type="list">
+        	<listEntry value="-1">@Strings.none</listEntry>
+        	<listEntry value="0">@Strings.steps</listEntry>
+        	<listEntry value="1">@Strings.distance</listEntry>
+        	<listEntry value="2">@Strings.calories</listEntry>
+        	<listEntry value="3">@Strings.floors</listEntry>
+        	<listEntry value="4">@Strings.active_minutes_week</listEntry>
+        	<listEntry value="5">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Arc1Radius" title="@Strings.Arc1RadiusTitle">
+    	<settingConfig type="numeric" min="1" max="120" errorMessage="@Strings.ArcRadiusInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.Arc1Width" title="@Strings.Arc1WidthTitle">
+    	<settingConfig type="numeric" min="1" max="20" errorMessage="@Strings.ArcWidthInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.Arc1Color" title="@Strings.Arc1ColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Arc1Direction" title="@Strings.Arc1DirectionTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.clockwise</listEntry>
+           	<listEntry value="1">@Strings.counter_clockwise</listEntry>
+        </settingConfig>
+   	</setting>
+
+    <setting propertyKey="@Properties.Arc2Info" title="@Strings.Arc2InfoTitle">
+        <settingConfig type="list">
+        	<listEntry value="-1">@Strings.none</listEntry>
+        	<listEntry value="0">@Strings.steps</listEntry>
+        	<listEntry value="1">@Strings.distance</listEntry>
+        	<listEntry value="2">@Strings.calories</listEntry>
+        	<listEntry value="3">@Strings.floors</listEntry>
+        	<listEntry value="4">@Strings.active_minutes_week</listEntry>
+        	<listEntry value="5">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Arc2Radius" title="@Strings.Arc2RadiusTitle">
+    	<settingConfig type="numeric" min="1" max="120" errorMessage="@Strings.ArcRadiusInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.Arc2Width" title="@Strings.Arc2WidthTitle">
+    	<settingConfig type="numeric" min="1" max="20" errorMessage="@Strings.ArcWidthInputError" />
+   	</setting>
+
+    <setting propertyKey="@Properties.Arc2Color" title="@Strings.Arc2ColorTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.color_default</listEntry>
+           	<listEntry value="1">@Strings.color_blue</listEntry>
+           	<listEntry value="2">@Strings.color_blue_dark</listEntry>
+           	<listEntry value="3">@Strings.color_green</listEntry>
+           	<listEntry value="4">@Strings.color_green_dark</listEntry>
+           	<listEntry value="5">@Strings.color_gray_little</listEntry>
+           	<listEntry value="6">@Strings.color_gray_dark</listEntry>
+           	<listEntry value="7">@Strings.color_orange</listEntry>
+           	<listEntry value="8">@Strings.color_pink</listEntry>
+           	<listEntry value="9">@Strings.color_purple</listEntry>
+           	<listEntry value="10">@Strings.color_red</listEntry>
+           	<listEntry value="11">@Strings.color_red_dark</listEntry>
+           	<listEntry value="12">@Strings.color_yellow</listEntry>
+           	<listEntry value="13">@Strings.color_white</listEntry>
+           	<listEntry value="14">@Strings.color_black</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Arc2Direction" title="@Strings.Arc2DirectionTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.clockwise</listEntry>
+           	<listEntry value="1">@Strings.counter_clockwise</listEntry>
+        </settingConfig>
+   	</setting>
+
+</settings>

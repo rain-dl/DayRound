@@ -1,0 +1,83 @@
+﻿<strings>
+
+    <string id="AppName">Day Round</string>
+
+    <string id="BackgroundColorTitle">背景颜色</string>
+    <string id="HourColorTitle">小时颜色</string>
+    <string id="MinuteColorTitle">分钟颜色</string>
+    <string id="SecondColorTitle">秒颜色</string>
+    <string id="AMPMColorTitle">AM/PM颜色</string>
+    <string id="DayArcColorTitle">日间弧线颜色</string>
+    <string id="NightArcColorTitle">夜间弧线颜色</string>
+    <string id="TimePosMarkColorTitle">时间位置标记颜色</string>
+    <string id="MilitaryFormatTitle">小时前补零</string>
+
+    <string id="UpperInfoTitle">上部信息</string>
+    <string id="UpperInfoPositionTitle">上部信息位置</string>
+    <string id="ShowUpperIconTitle">显示上部信息图标</string>
+    <string id="UpperIconColorTitle">上部信息图标颜色</string>
+    <string id="UpperInfoColorTitle">上部信息文字颜色</string>
+    <string id="UpperIconInfoGapTitle">上部信息图标与文字间距</string>
+
+    <string id="LowerInfoTitle">下部信息</string>
+    <string id="LowerInfoPositionTitle">下部信息位置</string>
+    <string id="ShowLowerIconTitle">显示下部信息图标</string>
+    <string id="LowerIconColorTitle">下部信息图标颜色</string>
+    <string id="LowerInfoColorTitle">下部信息文字颜色</string>
+    <string id="LowerIconInfoGapTitle">下部信息图标与文字间距</string>
+
+    <string id="UpperInfoPositionInputError">请输入 -120 至 0 之间的数字。</string>
+    <string id="LowerInfoPositionInputError">请输入 0 至 120 之间的数字。</string>
+    <string id="IconInfoGapInputError">请输入 0 至 20 之间的数字。</string>
+
+    <string id="Arc1InfoTitle">弧线 1信息</string>
+    <string id="Arc1RadiusTitle">弧线 1半径</string>
+    <string id="Arc1WidthTitle">弧线 1宽度</string>
+    <string id="Arc1ColorTitle">弧线 1颜色</string>
+    <string id="Arc1DirectionTitle">弧线 1方向</string>
+    <string id="Arc2InfoTitle">弧线 2信息</string>
+    <string id="Arc2RadiusTitle">弧线 2半径</string>
+    <string id="Arc2WidthTitle">弧线 2宽度</string>
+    <string id="Arc2ColorTitle">弧线 2颜色</string>
+    <string id="Arc2DirectionTitle">弧线 2方向</string>
+
+    <string id="ArcWidthInputError">请输入 1 至 20 之间的数字。</string>
+    <string id="ArcRadiusInputError">请输入 1 至 120 之间的数字。</string>
+
+    <string id="none">无</string>
+    <string id="date">日期</string>
+    <string id="battery">电量</string>
+    <string id="calories">卡路里</string>
+    <string id="steps">步数</string>
+    <string id="distance">距离</string>
+    <string id="heart_rate">心率</string>
+    <string id="active_minutes">运动时长</string>
+    <string id="active_minutes_week">周运动时长</string>
+    <string id="altimeter">海拔</string>
+    <string id="floors">楼层数</string>
+
+    <string id="clockwise">顺时针</string>
+    <string id="counter_clockwise">逆时针</string>
+
+    <string id="DateFormatTitle">日期格式</string>
+    <string id="DateFormatMonth">月份</string>
+    <string id="DateFormatDayOfWeek">星期</string>
+
+    <string id="color_default">默认</string>
+    <string id="color_blue">蓝</string>
+    <string id="color_blue_dark">深蓝</string>
+    <string id="color_green">绿</string>
+    <string id="color_green_dark">深绿</string>
+    <string id="color_gray_little">浅灰</string>
+    <string id="color_gray_dark">深灰</string>
+    <string id="color_orange">橙</string>
+    <string id="color_pink">粉</string>
+    <string id="color_purple">紫</string>
+    <string id="color_red">红</string>
+    <string id="color_red_dark">深红</string>
+    <string id="color_white">白</string>
+    <string id="color_black">黑</string>
+    <string id="color_yellow">黄</string>
+    <string id="color_random">随机色</string>
+
+</strings>
