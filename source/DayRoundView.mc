@@ -24,6 +24,8 @@ class DayRoundView extends Ui.WatchFace {
     private var _timeZoneOffset = 0;
     private var _iconFont;
 
+    private var _lastLocation = null;
+
     private var _backgroundColor;
     private var _useMilitaryFormat;
     private var _hourColor;
@@ -91,6 +93,8 @@ class DayRoundView extends Ui.WatchFace {
         centerY = dc.getHeight() >> 1 - 1;
 
         loadSettings();
+
+        _lastLocation = App.Storage.getValue("LastLocation");
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -261,15 +265,28 @@ class DayRoundView extends Ui.WatchFace {
     function drawDayCircle(dc) {
         var actInfo = Act.getActivityInfo();
         if(actInfo != null && actInfo.currentLocation != null) {
-            var day = Time.today().value() + _timeZoneOffset;
-            var lastLoc = actInfo.currentLocation.toRadians();
-            //lastLoc = [39.857 * Math.PI / 180, 116.6 * Math.PI / 180];
-            Sys.println(lastLoc);
+            var lastLoc = _lastLocation;
+            _lastLocation = actInfo.currentLocation.toRadians();
+            //_lastLocation = [39.857 * Math.PI / 180, 116.6 * Math.PI / 180];
+            //Sys.println(_lastLocation);
+            if (lastLoc != null) {
+                var diffX = _lastLocation[0] - lastLoc[0];
+                var diffY = _lastLocation[1] - lastLoc[1];
+                if (diffX < -0.004363323 || diffX > 0.004363323 || diffY < -0.004363323 || diffY > 0.004363323) {   // 0.004363323 = 0.25 Degree
+                    App.Storage.setValue("LastLocation", _lastLocation);
+                }
+            } else {
+                App.Storage.setValue("LastLocation", _lastLocation);
+            }
+        }
 
-            var sunrise_moment = SunCalc.calculate(day, lastLoc[0], lastLoc[1], SUNRISE);
-            var sunset_moment = SunCalc.calculate(day, lastLoc[0], lastLoc[1], SUNSET);
-            DebugOutputDateTime("sunrise", sunrise_moment, false);
-            DebugOutputDateTime("sunset", sunset_moment, false);
+        if (_lastLocation != null) {
+            var day = Time.today().value() + _timeZoneOffset;
+
+            var sunrise_moment = SunCalc.calculate(day, _lastLocation[0], _lastLocation[1], SUNRISE);
+            var sunset_moment = SunCalc.calculate(day, _lastLocation[0], _lastLocation[1], SUNSET);
+            //DebugOutputDateTime("sunrise", sunrise_moment, false);
+            //DebugOutputDateTime("sunset", sunset_moment, false);
             var sunrise = (sunrise_moment.value() + _timeZoneOffset - day).toDouble();
             var sunset = (sunset_moment.value() + _timeZoneOffset - day).toDouble();
             var sunrise_ad = sunrise / 86400 * 360;
