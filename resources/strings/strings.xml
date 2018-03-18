@@ -3,6 +3,7 @@
     <string id="AppName">Day Round</string>
 
     <string id="BackgroundColorTitle">Background Color</string>
+    <string id="TimeSizeTitle">Size of Time</string>
     <string id="HourColorTitle">Hour Color</string>
     <string id="MinuteColorTitle">Minute Color</string>
     <string id="SecondColorTitle">Second Color</string>
@@ -48,6 +49,9 @@
     <string id="ArcWidthInputError">Please input a value between 1 and 20.</string>
     <string id="ArcRadiusInputError">Please input a value between 1 and 120.</string>
 
+    <string id="small">Small</string>
+    <string id="medium">Medium</string>
+    <string id="large">Large</string>
     <string id="none">None</string>
     <string id="date">Date</string>
     <string id="battery">Battery</string>

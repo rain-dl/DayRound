@@ -2,6 +2,10 @@
     <fonts>
         <font id="id_font_futura_49" filename="futura_lt_bt_49.fnt" filter="0123456789" antialias="false" />
         <font id="id_font_futura_18" filename="futura_lt_bt_18.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_futura_59" filename="futura_lt_bt_59.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_futura_22" filename="futura_lt_bt_22.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_futura_69" filename="futura_lt_bt_69.fnt" filter="0123456789" antialias="false" />
+        <font id="id_font_futura_26" filename="futura_lt_bt_26.fnt" filter="0123456789" antialias="false" />
         <font id="id_font_berlin_sans_fb_7" filename="berlin_sans_fb_7.fnt" filter="APM" />
         <font id="id_font_icons" filename="icons.fnt" filter="12345678" />
         <font id="id_font_sun_moon" filename="sun_moon.fnt" filter="RS" />

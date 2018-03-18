@@ -20,6 +20,14 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.TimeSize" title="@Strings.TimeSizeTitle">
+        <settingConfig type="list">
+           	<listEntry value="0">@Strings.small</listEntry>
+           	<listEntry value="1">@Strings.medium</listEntry>
+           	<listEntry value="2">@Strings.large</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.HourColor" title="@Strings.HourColorTitle">
         <settingConfig type="list">
            	<listEntry value="0">@Strings.color_default</listEntry>

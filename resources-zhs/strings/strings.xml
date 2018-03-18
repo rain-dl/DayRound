@@ -3,10 +3,12 @@
     <string id="AppName">Day Round</string>
 
     <string id="BackgroundColorTitle">背景颜色</string>
+    <string id="TimeSizeTitle">时间显示大小</string>
     <string id="HourColorTitle">小时颜色</string>
     <string id="MinuteColorTitle">分钟颜色</string>
     <string id="SecondColorTitle">秒颜色</string>
     <string id="AMPMColorTitle">AM/PM颜色</string>
+    
 	<string id="ShowDayCircleTitle">显示日出、日落圆环</string>
     <string id="DayArcColorTitle">日间弧线颜色</string>
     <string id="NightArcColorTitle">夜间弧线颜色</string>
@@ -47,6 +49,9 @@
     <string id="ArcWidthInputError">请输入 1 至 20 之间的数字。</string>
     <string id="ArcRadiusInputError">请输入 1 至 120 之间的数字。</string>
 
+    <string id="small">小</string>
+    <string id="medium">中</string>
+    <string id="large">大</string>
     <string id="none">无</string>
     <string id="date">日期</string>
     <string id="battery">电量</string>

@@ -62,6 +62,7 @@ class DayRoundView extends Ui.WatchFace {
     private var _arc2Color;
     private var _arc2Direction;
 
+    private var _timeFontsLoaded;
     private var _firstDraw;
 
     function initialize() {
@@ -70,19 +71,19 @@ class DayRoundView extends Ui.WatchFace {
 
     // Load your resources here
     function onLayout(dc) {
-        hourFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_49);
-        var dimensions = dc.getTextDimensions("0", hourFont);
-        hourFontWidth = dimensions[0];
-        hourFontHeight = dimensions[1];
-
-        minuteFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_18);
-        dimensions = dc.getTextDimensions("0", minuteFont);
-        minuteFontWidth = dimensions[0];
-        minuteFontHeight = dimensions[1];
-
-        secondFont = minuteFont;
-        secondFontWidth = minuteFontWidth;
-        secondFontHeight = minuteFontHeight;
+//        hourFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_49);
+//        var dimensions = dc.getTextDimensions("0", hourFont);
+//        hourFontWidth = dimensions[0];
+//        hourFontHeight = dimensions[1];
+//
+//        minuteFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_18);
+//        dimensions = dc.getTextDimensions("0", minuteFont);
+//        minuteFontWidth = dimensions[0];
+//        minuteFontHeight = dimensions[1];
+//
+//        secondFont = minuteFont;
+//        secondFontWidth = minuteFontWidth;
+//        secondFontHeight = minuteFontHeight;
 
         ampmFont = WatchUi.loadResource(Rez.Fonts.id_font_berlin_sans_fb_7);
         _iconFont = WatchUi.loadResource(Rez.Fonts.id_font_icons);
@@ -152,7 +153,58 @@ class DayRoundView extends Ui.WatchFace {
         _arc2Color = Utils.getColor(App.getApp().getProperty("Arc2Color"), Gfx.COLOR_DK_GREEN);
         _arc2Direction = App.getApp().getProperty("Arc2Direction");
 
+        _timeFontsLoaded = false;
         _firstDraw = true;
+    }
+
+    function loadTimeFonts(dc) {
+        var timeSize = App.getApp().getProperty("TimeSize");
+        var dimensions;
+        switch (timeSize) {
+        case 0:
+            hourFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_49);
+            dimensions = dc.getTextDimensions("0", hourFont);
+            hourFontWidth = dimensions[0];
+            hourFontHeight = dimensions[1];
+
+            minuteFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_18);
+            dimensions = dc.getTextDimensions("0", minuteFont);
+            minuteFontWidth = dimensions[0];
+            minuteFontHeight = dimensions[1];
+
+            break;
+        case 1:
+            hourFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_59);
+            dimensions = dc.getTextDimensions("0", hourFont);
+            hourFontWidth = dimensions[0];
+            hourFontHeight = dimensions[1];
+
+            minuteFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_22);
+            dimensions = dc.getTextDimensions("0", minuteFont);
+            minuteFontWidth = dimensions[0];
+            minuteFontHeight = dimensions[1];
+
+            break;
+        case 2:
+        default:
+            hourFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_69);
+            dimensions = dc.getTextDimensions("0", hourFont);
+            hourFontWidth = dimensions[0];
+            hourFontHeight = dimensions[1];
+
+            minuteFont = WatchUi.loadResource(Rez.Fonts.id_font_futura_26);
+            dimensions = dc.getTextDimensions("0", minuteFont);
+            minuteFontWidth = dimensions[0];
+            minuteFontHeight = dimensions[1];
+
+            break;
+        }
+
+        secondFont = minuteFont;
+        secondFontWidth = minuteFontWidth;
+        secondFontHeight = minuteFontHeight;
+
+        _timeFontsLoaded = true;
     }
 
     function drawBackground(dc) {
@@ -202,6 +254,10 @@ class DayRoundView extends Ui.WatchFace {
     }
 
     function drawCurrentTime(dc, clockTime, isPartialUpdate) {
+        if (!_timeFontsLoaded) {
+            loadTimeFonts(dc);
+        }
+
         _timeZoneOffset = clockTime.timeZoneOffset;
         var hourDigits = 1;
         var hour = clockTime.hour;
@@ -214,7 +270,7 @@ class DayRoundView extends Ui.WatchFace {
 
         var w = dc.getWidth();
         var h = dc.getHeight();
-        var min_sec_x = (w + hourFontWidth) / 2 + 9;
+        var min_sec_x = (w + hourFontWidth) / 2 + 7 * 14 / minuteFontWidth;
         var hour_y = (h - hourFontHeight) / 2;
 
         if (!isPartialUpdate) {
@@ -246,7 +302,7 @@ class DayRoundView extends Ui.WatchFace {
                 } else {
                     ampm = "AM";
                 }
-                var ampm_x = min_sec_x + minuteFontWidth * 2 + 6;
+                var ampm_x = min_sec_x + minuteFontWidth * 2 + 6 * 14 / minuteFontWidth;
                 dc.setColor(_ampmColor, Gfx.COLOR_TRANSPARENT);
                 dc.drawText(ampm_x, hour_y, ampmFont, ampm, Gfx.TEXT_JUSTIFY_LEFT);
             }

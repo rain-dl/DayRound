@@ -1,6 +1,7 @@
 <properties>
 
     <property id="BackgroundColor" type="number">0</property>
+    <property id="TimeSize" type="number">1</property>
     <property id="HourColor" type="number">0</property>
     <property id="MinuteColor" type="number">0</property>
     <property id="SecondColor" type="number">0</property>
